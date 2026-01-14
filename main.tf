@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "example" {
   ami           = "ami-027308df79a86d22c"
-  instance_type = "t3.small"
+  instance_type = "c7i-flex.large"
 
   tags = {
     Name = "simple-ec2"
