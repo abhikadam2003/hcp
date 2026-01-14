@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "example" {
-  ami           = "ami-02b8269d5e85954ef"
+  ami           = "ami-027308df79a86d22c"
   instance_type = "t3.small"
 
   tags = {
