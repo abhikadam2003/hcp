@@ -1,12 +1,12 @@
 provider "aws" {
-region = "ap-south-1"
+  region = "ap-south-1"
 }
 
-resource "aws_instance" "one" {
-ami = "ami-02b8269d5e85954ef"
-instance_type = "t2.micro"
-tags = {
-Name = "hcp-server"
-}
-}
+resource "aws_instance" "example" {
+  ami           = "ami-02b8269d5e85954ef"
+  instance_type = "t3.small"
 
+  tags = {
+    Name = "simple-ec2"
+  }
+}
