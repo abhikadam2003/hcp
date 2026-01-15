@@ -12,9 +12,8 @@ resource "aws_instance" "one" {
     Name = var.instance_names[count.index]
   }
 }
-   
 
-  variable = "instance_names" {
+  variable  "instance_names" {
     default = ["jenkins","App-server-1","App-server-2","monituring"]
   }
 
